@@ -175,7 +175,7 @@ class DefaultHttpClientAdapter implements HttpClientAdapter {
       }
       _defaultHttpClient!.connectionTimeout = _connectionTimeout;
     }
-    return _defaultHttpClient!;
+    return _defaultHttpClient!..connectionTimeout = _connectionTimeout;
   }
 
   @override
